@@ -31,7 +31,7 @@ header {
   padding: 20px 50px;
 }
 
-.box {
+.container {
   padding-left: 220px;
   padding-right: 220px;
 }
@@ -152,7 +152,7 @@ h1 {
 .rotating-image {
   height: auto;
   position: absolute;
-  animation: rotateAnimation 20s linear infinite reverse; /* Время, тип анимации и бесконечность с обратным вращением */
+  animation: rotateAnimation 31s linear infinite reverse; /* Время, тип анимации и бесконечность с обратным вращением */
   top:50px
 }
 
@@ -161,13 +161,68 @@ h1 {
     transform: rotate(360deg);
   }
 }
-
-.choose {
-  display: flex;
-  gap: 40px;
+.title-container{
+  margin-right: 80px;
 }
+.reasons{
+  display: flex;
+  margin-bottom: 231px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2,380px);
+  grid-row-gap: 0; 
+  justify-content: center;
+  align-items: center;
+}
+.grid-item{
+  width: 100%;
+  height: 300px;
+  padding-top: 10px;
+}
+.grid-item-text{
+  border-right: 1px solid var(--accent-color); 
+  border-bottom: 1px solid var(--accent-color); 
+  font-family: var(--font-accent);
+  font-weight: 400;
+  line-height: 1.62;
+  text-align: left;
+  padding-bottom: 75px;
+  padding-right: 119px;
+}
+.one{
+  padding-bottom: 98px;
+  border-bottom: 1px solid var(--accent-color);
+  padding-left: 20px; 
+  display: block;
+}
+.two{
+  border-right: 1px solid var(--accent-color); 
+  padding-top: 140px;
+}
+.three{
+  padding-top: 140px;
+  padding-left: 20px;
+}
+.item-number{
+  color: var(--accent-color); 
+  font-size: 120px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.item-text{
+  color: var(--accent-color);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+
 .title-second {
   width: 100%;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .slider-text {

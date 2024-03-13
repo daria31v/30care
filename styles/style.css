@@ -6,6 +6,7 @@
   --section-bg: #fdf1e7;
   --text-color: #000;
   --data-color: #646464;
+  --slider-color: #1F2D46;
   --font-main: "Rubik", sans-serif;
   --font-accent: "Manrope", sans-serif;
 }
@@ -217,18 +218,126 @@ h1 {
   line-height: 1;
 }
 
-
-
 .title-second {
   width: 100%;
   font-size: 40px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
-
-.slider-text {
+.slider-product{
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+}
+.slider-bg{
+  width: 960px;
+  height: 600px;
+  background-image:  url("../images/slider-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 140px;
+}
+.slider-content {
   display: block;
   width: 280px;
 }
+h3{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+.slider-description{
+  font-family: var(--font-accent);
+  color: var(--slider-color);
+  margin: 30px 0 50px 0;
+}
+.slider-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 260px;
+  height: 50px;
+  padding: 16px 50px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  color: inherit;
+  cursor: pointer;
+}
+.slider-btn:hover,:focus{
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+}
+.slider-btn:active{
+  background-color: var(--primary-color);
+}
 .is-hidden {
   display: none;
+}
+.solution{
+  width: 100%;
+  height: 100%;
+}
+.solution-bg{
+  height: 900px;
+  width: auto;
+  background-image: url('../images/hero-2x_xl.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 130px;
+}
+.partners{
+  width: 100%;
+  height: 100%;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: var(--primary-color);
+}
+.partners-title{
+  color: var(--secondary-color);
+  margin-bottom: 90px;
+}
+.partners-container{
+  display: flex;
+  gap: 140px;
+}
+.partners-group-btn{
+  padding-top: 250px;
+}
+.partner-btn{
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.partner-btn:active{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.partners-grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,365px);
+  gap: 40px; 
+  justify-content: start;
+  align-items: center;
+}
+.partners-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 90px;
+  
+}
+.partners-number{
+  font-size: 130px;
+  font-weight: 300;
+  width: 55px;
+  color: var(--accent-color);
+}
+.partners-text{
+  color: var(--secondary-color);
+  margin-left: 50px;
+  font-weight: 500;
+  font-family: var(--font-accent);
 }

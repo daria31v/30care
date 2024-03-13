@@ -436,7 +436,6 @@ h4{
   display: flex;
   gap: 40px;
   margin-top: 80px;
- 
 }
 .location-item{
   width: 360px;
@@ -444,4 +443,36 @@ h4{
 }
 .location-text{
   color: var(--secondary-color);
+}
+.franchise{
+  width: 100%;
+  height: 1080px;
+  background-image: url("../images/franchise-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 180px;
+
+}
+.franchise-title{
+  color: var(--secondary-color);
+}
+.franchise-text{
+  color: var(--text-color);
+  font-family: var(--font-accent);
+  margin-top: 30px;
+}
+.franchise-btn{
+  background-color: var(--secondary-color);
+  border:none;
+  margin-top: 30px;
+}
+.franchise-btn:hover,:focus{
+  background-color: var(--primary-color);
+  border:none;
+}
+.franchise-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 210px;
 }

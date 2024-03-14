@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="favicon/30care_favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30care</title>
+    <title>30.care</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,70 +18,71 @@
       <a href="/" class="logo">
         <img src="images/logo.png" width="232px" height="20px" />
       </a>
-      <nav class="menu">
+      <nav>
         <ul class="menu-list">
           <li class="menu-item">
-            <a href="#" target="_self" class="">About us</a>
+            <a href="/" target="_self" class="menu-link menu-link-current"
+              >About us</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="">Our Brands</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >Our Brands</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_blank" class="">30.care school</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >30.care school</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_blank" class="">Cooperation</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >Cooperation</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_blank" class="">Franchising</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >Franchising</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_blank" class="">Blog</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >Blog</a
+            >
           </li>
           <li class="menu-item">
-            <a href="#" target="_blank" class="">Contact</a>
+            <a href="#" target="_self" class="menu-link menu-link-current"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
-      <div>
-        <button class="btn">Quotation Request</button>
-      </div>
       <!-- pop-up -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <!-- <button class="modal-btn" data-modal-close>
-            <svg class="modal-btn-icon" width="18" height="18" viewcontainer="0 0 18 18">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button> -->
-          <form
-            class="modal-form"
-            name="modal-order"
-            autocomplete="on"
-            novalidate
-          >
-            <div class="group">
-              <label class="input-request">
-                <input
-                  class="input-item"
-                  type="text"
-                  name="username"
-                  placeholder="Your name"
-                />
-              </label>
-              <label class="input-request">
-                <input
-                  class="input-item"
-                  type="tel"
-                  name="user-phone"
-                  placeholder="Your phone number"
-                />
-              </label>
-            </div>
-            <button class="btn-submite" type="submit">Send</button>
-          </form>
+      <div id="backdrop"></div>
+      
+      <dialog id="myDialog">
+        <div class="dialog-group">
+          <label class="">
+            <input
+              class="dialog-item"
+              type="text"
+              name="username"
+              placeholder="Your name"
+            />
+          </label>
+          <label class="">
+            <input
+              class="dialog-item"
+              type="tel"
+              name="user-phone"
+              placeholder="Your phone number"
+            />
+          </label>
         </div>
-      </div>
+        <button id="closeDialog" class="btn">Send</button>
+      </dialog>
+      <button class="btn openDialog">Quotation Request</button>
+
       <!-- menu -->
       <div>
         <button id="menu-icon" type="button">
@@ -185,7 +185,7 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
 
-            <button class="slider-btn">Quotation Request</button>
+            <button class="slider-btn openDialog">Quotation Request</button>
             <button class="slider-btn">More of our brands</button>
           </div>
         </div>
@@ -240,7 +240,7 @@
             </div>
           </div>
           <div class="partners-group-btn">
-            <button class="slider-btn partner-btn">Quotation Request</button>
+            <button class="slider-btn partner-btn openDialog">Quotation Request</button>
             <button class="slider-btn partner-btn">More of work with us</button>
           </div>
         </div>
@@ -445,31 +445,54 @@
             <nav>
               <ul class="footer-list">
                 <li class="">
-                  <a href="#" target="_self" class="footer-text footer-nav-link">About us</a>
+                  <a href="#" target="_self" class="footer-text footer-nav-link"
+                    >About us</a
+                  >
                 </li>
                 <li class="">
-                  <a href="#" target="_self" class="footer-text footer-nav-link">Our Brands</a>
+                  <a href="#" target="_self" class="footer-text footer-nav-link"
+                    >Our Brands</a
+                  >
                 </li>
                 <li class="">
-                  <a href="#" target="_blank" class="footer-text footer-nav-link"
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-text footer-nav-link"
                     >30.care school</a
                   >
                 </li>
                 <li class="">
-                  <a href="#" target="_blank" class="footer-text footer-nav-link"
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-text footer-nav-link"
                     >Cooperation</a
                   >
                 </li>
                 <li class="">
-                  <a href="#" target="_blank" class="footer-text footer-nav-link"
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-text footer-nav-link"
                     >Franchising</a
                   >
                 </li>
                 <li class="">
-                  <a href="#" target="_blank" class="footer-text footer-nav-link">Blog</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-text footer-nav-link"
+                    >Blog</a
+                  >
                 </li>
                 <li class="">
-                  <a href="#" target="_blank" class="footer-text footer-nav-link">Contact</a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-text footer-nav-link"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -486,7 +509,7 @@
             </div>
           </div>
           <div>
-            <button class="btn footer-btn">Quotation Request</button>
+            <button class="btn footer-btn openDialog">Quotation Request</button>
           </div>
         </div>
         <div class="footer-info">
@@ -510,6 +533,6 @@
         </div>
       </div>
     </section>
-    <!-- <script src=""></script> -->
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

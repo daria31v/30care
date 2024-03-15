@@ -18,40 +18,38 @@
       <a href="/" class="logo">
         <img src="images/logo.png" width="232px" height="20px" />
       </a>
-      <nav>
+      <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item">
-            <a href="/" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >About us</a
             >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >Our Brands</a
             >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >30.care school</a
             >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >Cooperation</a
             >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >Franchising</a
             >
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
-              >Blog</a
-            >
+            <a href="#" target="_self" class="menu-link link__current">Blog</a>
           </li>
           <li class="menu-item">
-            <a href="#" target="_self" class="menu-link menu-link-current"
+            <a href="#" target="_self" class="menu-link link__current"
               >Contact</a
             >
           </li>
@@ -59,7 +57,7 @@
       </nav>
       <!-- pop-up -->
       <div id="backdrop"></div>
-      
+
       <dialog id="myDialog">
         <div class="dialog-group">
           <label class="">
@@ -81,75 +79,93 @@
         </div>
         <button id="closeDialog" class="btn">Send</button>
       </dialog>
-      <button class="btn openDialog">Quotation Request</button>
+      <button class="btn header-btn openDialog">Quotation Request</button>
 
-      <!-- menu -->
-      <div>
-        <button id="menu-icon" type="button">
+      <!-- tohle lang -->
+      <div class="tohle-lang">
+        <button class="btn-lang">en</button>
+        <button class="btn-lang">de</button>
+      </div>
+      <!-- burger-menu -->
+      <div class="burger-menu">
+        <button id="burger-menu-icon" class="burger-menu-btn" type="button">
           <svg class="" width="20" height="20">
             <use href="./images/icon-menu.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div>
-        <button class="btn-lang">en</button>
-        <button class="btn-lang">de</button>
-      </div>
     </header>
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="hero-content">
-          <div class="main">
-            <h1 class="">
-              Professional <br />
-              Skin Care for <br />
-              beauty salons, <br />
-              clinics and <br />
-              cosmetologists
-            </h1>
+        <div >
+          <div class="hero-content">
+            <div class="main">
+              <h1>
+                Professional <br />
+                Skin Care for <br />
+                beauty salons, <br />
+                clinics and <br />
+                cosmetologists
+              </h1>
+            </div>
+            <div id="link">
+              <span class="hero-link">www.30.care</span>
+            </div>
           </div>
-          <div id="link">
-            <span class="hero-link">www.30.care</span>
+          <!-- circle text -->
+          <div class="circle-container">
+            <img
+              class="rotating-image"
+              src="images/circle-text-1.png"
+              width="200"
+              height="200"
+              alt="The best offer of beaty professional cosmetics in Europe."
+            />
           </div>
-        </div>
-        <!-- circle text -->
-        <div class="circle-container">
-          <img
-            class="rotating-image"
-            src="images/circle-text-1.png"
-            width="200"
-            height="200"
-            alt="The best offer of beaty professional cosmetics in Europe."
-          />
         </div>
       </section>
       <!-- why - reasons -->
-      <section class="container reasons">
-        <div class="title-container">
-          <h2 class="title-second">Why choose us</h2>
-        </div>
-        <div class="grid-container">
-          <div class="grid-item grid-item-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-          <div class="grid-item one">
-            <span class="item-number">500 +</span>
-            <br />
-            <span class="item-text">beaty products</span>
-          </div>
-          <div class="grid-item two">
-            <span class="item-number">300 +</span>
-            <br />
-            <span class="item-text">cosmetologists</span>
-          </div>
-          <div class="grid-item three">
-            <span class="item-number">30</span>
-            <br />
-            <span class="item-text">own beaty salon</span>
+      <section class="">
+        <div class="container">
+          <div class="reasons">
+            <div class="title-container">
+              <h2 class="title-second">Why choose us</h2>
+            </div>
+            <div class="reasons-container-content">
+            <div class="reasons-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="reasons-grid-container">
+              <div class="reasons-item reasons-item-content reasons-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="reasons-item element-one">
+                <span class="reasons-item-number">500 +</span>
+                <br />
+                <span class="reasons-item-text">beaty products</span>
+              </div>
+              <div class="reasons-item element-two">
+                <span class="reasons-item-number">300 +</span>
+                <br />
+                <span class="reasons-item-text">cosmetologists</span>
+              </div>
+              <div class="reasons-item element-three">
+                <span class="reasons-item-number">30</span>
+                <br />
+                <span class="reasons-item-text">own beaty salon</span>
+              </div>
+              <div class="reasons-item element-for"></div>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </section>
@@ -189,7 +205,6 @@
             <button class="slider-btn">More of our brands</button>
           </div>
         </div>
-        <!-- <div>....</div> -->
       </section>
 
       <!-- solution -->
@@ -239,8 +254,10 @@
               >
             </div>
           </div>
-          <div class="partners-group-btn">
-            <button class="slider-btn partner-btn openDialog">Quotation Request</button>
+          <div class="partners-group-btn" hidden>
+            <button class="slider-btn partner-btn openDialog">
+              Quotation Request
+            </button>
             <button class="slider-btn partner-btn">More of work with us</button>
           </div>
         </div>
@@ -410,7 +427,7 @@
       </div>
     </section>
     <!-- events -->
-    <section class="events">
+    <section class="events" hidden>
       <div class="container">
         <h2 class="title-second events-title">Our news and events</h2>
 

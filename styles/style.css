@@ -41,9 +41,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* section{
-  height: 100%;
-} */
 /* header */
 header {
   width: 100%;
@@ -333,10 +330,6 @@ h3 {
 } */
 /* partners */
 .partners {
-  width: 100%;
-  height: 100%;
-  padding-top: 180px;
-  padding-bottom: 180px;
   background-color: var(--primary-color);
 }
 .partners-title {
@@ -386,11 +379,7 @@ h3 {
 }
 /* school */
 .school {
-  width: 100%;
-  height: 100%;
   background-color: var(--section-bg);
-  padding-top: 118px;
-  padding-bottom: 18px;
 }
 .school-title {
   margin-bottom: 156px;
@@ -435,18 +424,15 @@ h3 {
   display: grid;
 }
 /* education */
-.education {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
+
 .education-list {
   display: flex;
   gap: 40px;
 }
 .education-item {
-  width: 360px;
+  /* width: 360px;
   height: 240px;
-  padding: 38px 40px 43px 40px;
+  padding: 38px 40px 43px 40px; */
   background-color: var(--section-bg);
 }
 .education-container {
@@ -456,11 +442,12 @@ h3 {
   width: 360px;
   height: 50px;
 }
-h4 {
+.education-title {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.16;
   color: var(--accent-color);
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 .text {
   font-family: var(--font-accent);
@@ -468,10 +455,6 @@ h4 {
 }
 /* location */
 .location {
-  width: 100%;
-  height: 100%;
-  padding-top: 180px;
-  padding-bottom: 200px;
   background-color: var(--primary-color);
 }
 .location-list {
@@ -705,9 +688,7 @@ h5 {
     background-position: center;
     margin-top: 130px;
   }
-  .solution-item-box {
-    display: none;
-  }
+ 
   .solution-list {
     display: none;
   }
@@ -732,6 +713,15 @@ h5 {
   .solution-text {
     font-family: var(--font-accent);
   }
+  .solution-box-s,
+  .solution-box-m,
+  #solution-box-empty {
+    display: none;
+  }
+  .education-item {
+    width: 360px;
+    height: 240px;
+    padding: 38px 40px 43px 40px;
 }
 @media (max-width: 1439px) {
   .menu {
@@ -740,10 +730,11 @@ h5 {
   .btn-lang {
     display: none;
   }
+  
 }
 @media (min-width: 960px) and (max-width: 1439px) {
   .container {
-    padding: 180px 10px 0 10px;
+    padding: 180px 10px 130px 10px;
   }
   header {
     padding: 15px 20px 15px 10px;
@@ -820,6 +811,60 @@ h5 {
   .solution-bg {
     margin-top: 84px;
   }
+  .solution-box-m {
+    display: none;
+  }
+  #solution-box-empty{
+    background-color: transparent;
+  }
+  .solution-list {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-row-gap: 0;
+  }
+  .solution-item {
+    width: auto;
+    height: 470px;
+    background-color: var(--section-bg);
+    padding: 74px 40px;
+    border: none;
+  
+  }
+  .solution-item:not(:first-child) {
+    margin-top: -10px;
+  }
+
+  .solution-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  .solution-text {
+    font-family: var(--font-accent);
+  }
+  .partners-container{
+    display: block;
+  }
+  .partners-group-btn{
+    padding-top: 0;
+    margin-top: 105px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+  .school-cards{
+    gap: 20px;
+  }
+  .school-description{
+    margin-top: 27px;
+    margin-bottom: 62px;
+  }
+  .education-item {
+    width: 300px;
+    height: 240px;
+    padding: 38px 40px 43px 40px;
 }
 @media (min-width: 640px) and (max-width: 959px) {
   h1 {

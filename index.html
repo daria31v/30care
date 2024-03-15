@@ -227,10 +227,15 @@
               <h3 class="solution-title">Products for skin <br/> and hair care</h3>
               <p class="solution-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="solution-item-box ">
-            <img class="solution-img-s" src="/images/back-solutions_s.jpeg" alt="girl"/>
-            <img class="solution-img-m" src="/images/back-solutions_m.jpeg" alt="girl"/>
+
+            <div class="solution-box-s">
+            <img class="solution-img-s" src="/images/back-solutions_s.jpeg" width="320" height="470" alt="girl"/>
             </div>
+            <div class="solution-box-m">
+            <img class="solution-img-m" src="/images/back-solutions_m.jpeg" width="480" height="400" alt="girl"/>
+            </div>
+            <div class="solution-item" id="solution-box-empty"></div>
+            <div class="solution-item" id="solution-box-empty"></div>
             <div class="solution-item">
               <h3 class="solution-title">Equipment for <br/> cosmetologists</h3>
               <p class="solution-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -239,19 +244,19 @@
               <h3 class="solution-title">Products for <br/> makeup </h3>
               <p class="solution-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="solution-item solution-item-box">              
-            </div>
           </div>
         </div>
       </section>
 
       <!-- partners -->
-      <section class="container partners">
+      <section class="partners">
+        <div class="container">
         <h2 class="title-second partners-title">
           Our business partners are <br />
           guaranteed to receive
         </h2>
         <div class="partners-container">
+
           <div class="partners-grid-container">
             <div class="partners-item">
               <span class="partners-number">1</span
@@ -283,14 +288,16 @@
               >
             </div>
           </div>
-          <div class="partners-group-btn" hidden>
+
+          <div class="partners-group-btn">
             <button class="slider-btn partner-btn openDialog">
               Quotation Request
             </button>
             <button class="slider-btn partner-btn">More of work with us</button>
           </div>
-        </div>
 
+        </div>
+      </div>
       </section>
 
       <!-- school -->
@@ -378,7 +385,7 @@
           </div>
           <div class="education-list">
             <div class="education-item">
-              <h4>
+              <h4 class="education-title">
                 Corporate <br />
                 education
               </h4>
@@ -388,7 +395,7 @@
               </p>
             </div>
             <div class="education-item">
-              <h4>Trainings for our partners</h4>
+              <h4 class="education-title">Trainings for our partners</h4>
               <p class="text">
                 beauty salons, clinics,<br />
                 cosmetologists

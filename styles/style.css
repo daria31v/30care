@@ -379,6 +379,7 @@ h3 {
 }
 /* school */
 .school {
+  height: ;
   background-color: var(--section-bg);
 }
 .school-title {
@@ -455,6 +456,7 @@ h3 {
 }
 /* location */
 .location {
+  width: 100%;
   background-color: var(--primary-color);
 }
 .location-list {
@@ -723,6 +725,10 @@ h5 {
     height: 240px;
     padding: 38px 40px 43px 40px;
 }
+.location{
+  height: 730px;
+}
+}
 @media (max-width: 1439px) {
   .menu {
     display: none;
@@ -864,7 +870,11 @@ h5 {
   .education-item {
     width: 300px;
     height: 240px;
-    padding: 38px 40px 43px 40px;
+    padding: 38px 30px 43px 30px;
+}
+.location{
+  height: 680px;
+}
 }
 @media (min-width: 640px) and (max-width: 959px) {
   h1 {
@@ -882,6 +892,9 @@ h5 {
   .solution-bg {
     margin-top: 84px;
   }
+  .location{
+    height: 680px;
+  }
 }
 @media (min-width: 480px) and (max-width: 1430px) {
   .reasons-container-content {
@@ -894,7 +907,7 @@ h5 {
     margin-top: 0;
   }
 }
-@media (min-width: 479px) and (max-width: 639px) {
+@media (min-width: 480px) and (max-width: 639px) {
   h1 {
     font-size: 36px;
   }
@@ -906,6 +919,9 @@ h5 {
   }
   .solution-bg {
     margin-top: 54px;
+  }
+  .location{
+    height: 710px;
   }
 }
 @media (min-width: 320px) and (max-width: 959px) {
@@ -942,5 +958,8 @@ h5 {
   }
   .solution-bg {
     margin-top: 106px;
+  }
+  .location{
+    height: 980px;
   }
 }

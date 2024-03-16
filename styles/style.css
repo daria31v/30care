@@ -194,14 +194,11 @@ header {
   line-height: 1;
   text-transform: uppercase;
   color: var(--secondary-color);
-  margin-top: 119px;
 }
 #link {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 50px;
-  margin-left: auto;
 }
 .hero-link {
   position: absolute;
@@ -218,7 +215,7 @@ header {
 }
 /* circle */
 .circle-container {
-  width: auto;
+  width: 200px;
   height: 200px;
   justify-content: end;
   align-items: center;
@@ -314,6 +311,21 @@ header {
 .slider-btn:active {
   background-color: var(--primary-color);
 }
+/* solution */
+.solution-img-s,
+.solution-img-m {
+  width: 100%;
+  height: 100%;
+}
+.solution-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.solution-text {
+  font-family: var(--font-accent);
+}
 /* partners */
 .partners {
   background-color: var(--primary-color);
@@ -337,19 +349,13 @@ header {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.partners-grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 365px);
-  gap: 40px;
-  justify-content: start;
-  align-items: center;
-}
+
 .partners-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 360px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
 }
 .partners-number {
   font-size: 130px;
@@ -386,10 +392,7 @@ header {
   background-color: var(--secondary-color);
   border-radius: 5px;
 }
-.school-circle-text {
-  top: 240px;
-  left: -15px;
-}
+
 .school-img {
   width: 240px;
   height: 360px;
@@ -400,12 +403,7 @@ header {
   margin-bottom: 23px;
   font-family: var(--font-accent);
 }
-.school-slogan {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
+
 .school-details {
   display: grid;
 }
@@ -538,11 +536,11 @@ header {
 .contact-item {
   color: var(--secondary-color);
 }
-.footer-btn{
+.footer-btn {
   height: 50px;
 }
 .footer-btn:hover,
-.footer-btn:focus{
+.footer-btn:focus {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
@@ -571,9 +569,6 @@ header {
   cursor: pointer;
 }
 
-
-
-
 /* media */
 @media (min-width: 1440px) {
   .container {
@@ -592,10 +587,21 @@ header {
     display: flex;
   }
   .hero {
+    height: 750px;
     background-image: url("../images/hero-2x_xl.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 119px;
+    padding-bottom: 111px;
+  }
+  #link{
+    margin-right: 50px;
+    margin-left: auto;
+  }
+  .hero-link{
+    top: 30%;
+
   }
   .hero-title {
     font-size: 100px;
@@ -697,6 +703,19 @@ header {
   .school-title {
     margin-bottom: 156px;
   }
+  .school-slogan {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .partners-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 40px;
+    justify-content: start;
+    align-items: center;
+  }
   .education-item {
     width: 360px;
     height: 240px;
@@ -716,14 +735,14 @@ header {
     background-size: cover;
     background-position: center;
   }
-  .franchise-slogan{
+  .franchise-slogan {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .franchise-container {
     width: 1080px;
-    margin-top: 200px; 
+    margin-top: 200px;
   }
   .events-title {
     margin-bottom: 140px;
@@ -741,14 +760,22 @@ header {
   header {
     padding: 15px 20px 15px 10px;
   }
-  .hero-title {
-    font-size: 60px;
-  }
+
   .hero {
+    height: 530px;
     background-image: url("/images/hero-1x_l.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .hero-title {
+    font-size: 60px;
+  }
+  #link{
+    margin-right: 30px;
+  }
+  .hero-link{
+    top: 30%;
   }
   .reasons-content {
     font-size: 26px;
@@ -834,14 +861,12 @@ header {
   .solution-item:not(:first-child) {
     margin-top: -10px;
   }
-  .solution-title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.1;
-  }
-  .solution-text {
-    font-family: var(--font-accent);
+  .partners-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 30px;
+    justify-content: start;
+    align-items: center;
   }
   .partners-container {
     display: block;
@@ -863,14 +888,31 @@ header {
   .school-cards {
     gap: 20px;
   }
+  .school-card{
+    height: 100%;
+  }
   .school-description {
     margin-top: 27px;
     margin-bottom: 62px;
+  }
+  .school-box-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .school-slogan{
+    width: 700px;
+  }
+  .education-list{
+    gap: 20px;
   }
   .education-item {
     width: 300px;
     height: 240px;
     padding: 38px 30px 43px 30px;
+  }
+  .education-btn{
+    width: 300px;
   }
   .location {
     height: 680px;
@@ -899,24 +941,187 @@ header {
 
 /* 640px - 959px */
 @media (min-width: 640px) and (max-width: 959px) {
-  .container{
-    padding: 140px 10px 150px 10px;
+  .container {
+    padding: 90px 10px 60px 10px;
+  }
+  header {
+    padding: 10px 25px 10px 25px;
   }
   .hero-title {
     font-size: 36px;
+    margin-top: 0;
   }
   .hero {
+    height: 360px;
     background-image: url("/images/hero-1x_m.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 83px 0 97px 0;
+  }
+  #link {
+    margin-right: 10px;
   }
   .reasons-grid-container {
     margin-top: 80px;
   }
+  .reasons-item {
+    border-bottom: 1px solid var(--pop-up-color);
+  }
+  .element-two,
+  .element-three {
+    margin-top: 30px;
+  }
+  .reasons-container-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .reasons-content p {
+    width: 300px;
+  }
+  .reasons-item-number {
+    font-size: 95px;
+  }
+  .slider-product {
+    display: block;
+  }
+  .slider-bg {
+    width: 640px;
+    height: 300px;
+    background-image: url("/images/slider-bg_m.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slider-content-box {
+    padding: 0 10px 0 10px;
+  }
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-content {
+    width: auto;
+    margin-top: 60px;
+  }
+  .slider-title {
+    margin-bottom: 30px;
+  }
+  .slider-description {
+    margin: 0 20px 0 0;
+  }
+  .slider-btn {
+    width: 300px;
+  }
   .solution-bg {
+    background-image: none;
+  }
+  .solution-list {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-row-gap: 0;
     margin-top: 84px;
   }
+  .solution-item {
+    width: 100%;
+    background-color: var(--section-bg);
+    padding: 74px 40px;
+  }
+  .solution-box-m {
+    display: none;
+  }
+  #solution-box-empty {
+    display: none;
+  }
+  .partners-container{
+    display: block;
+  }
+  .partners-title{
+    margin-bottom: 70px;
+  }
+  .partners-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+  }
+  .partners-text {
+    margin-left: 20px;
+  }
+  .partners-group-btn{
+    padding-top: 0;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+  }
+  .school-title{
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+  .school-content{
+    display: block;
+  }
+  .school-cards{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+  .school-card{
+    width: 220px;  
+  }
+  .school-card img{
+    width: 200px;
+    height: 100%;
+  }
+  school-circle-text{
+    position: absolute;
+    top: -150px;
+    right: -120px;
+  }
+  .school-description{
+    display: flex;
+    align-content: center;
+    justify-content: end;
+  }
+  .school-description .text{
+    width: 460px;
+  }
+  .school-details{
+    display: grid;
+    justify-content: end;
+  }
+  .school-box-slogan{
+    margin-top: 36px;
+    width: 620px;
+  }
+  .education-list{
+    gap: 20px;
+  }
+  .education-item {
+    width: 300px;
+    height: 240px;
+    padding: 38px 30px 43px 30px;
+  }
+  .education-content{
+    display: block;
+  }
+  .education-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 50px;
+  }
+  .education-btn{
+    width: 300px;
+  }
+
   .franchise {
     width: 100%;
     height: 640px;
@@ -928,16 +1133,32 @@ header {
   .franchise-container {
     width: 460px;
   }
-  .franchise-btn{
+  .franchise-title{
+    margin-top: 50px;
+  }
+  .franchise-btn {
     margin-bottom: 40px;
   }
   .location {
     height: 680px;
   }
-  .events-title{
+  .events-title {
     margin-bottom: 90px;
+    margin-top: 50px;
+  }
+  .events-list{
+    margin-bottom: 150px;
+  }
+  .footer-contact{
+    margin-left: 20px;
   }
   .footer-btn {
+    width: 220px;
+  }
+  .info-text{
+    width: 350px;
+  }
+  .footer-container{
     width: 220px;
   }
 }
@@ -1021,7 +1242,6 @@ header {
   }
 }
 
-
 /* ----------------------------------------------- */
 /* extra media */
 @media (max-width: 1439px) {
@@ -1040,7 +1260,7 @@ header {
   .events-list {
     display: flex;
   }
-  .franchise-slogan{
+  .franchise-slogan {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -1048,12 +1268,6 @@ header {
 }
 /* 480 + */
 @media (min-width: 480px) and (max-width: 1430px) {
-  .reasons-container-content {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 80px;
-  }
   .reasons-grid-container {
     margin-top: 0;
   }

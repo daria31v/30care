@@ -763,7 +763,7 @@ header {
 
   .hero {
     height: 530px;
-    background-image: url("/images/hero-1x_l.jpeg");
+    background-image: url("../images/hero-1x_l.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -817,7 +817,7 @@ header {
   .slider-bg {
     width: 960px;
     height: 500px;
-    background-image: url("/images/slider-bg_l.jpeg");
+    background-image: url("../images/slider-bg_l.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -953,7 +953,7 @@ header {
   }
   .hero {
     height: 360px;
-    background-image: url("/images/hero-1x_m.jpeg");
+    background-image: url("../images/hero-1x_m.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -989,7 +989,7 @@ header {
   .slider-bg {
     width: 640px;
     height: 300px;
-    background-image: url("/images/slider-bg_m.jpeg");
+    background-image: url("../images/slider-bg_m.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

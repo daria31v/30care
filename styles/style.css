@@ -41,6 +41,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.is-hidden {
+  display: none;
+}
 /* header */
 header {
   width: 100%;
@@ -186,7 +189,7 @@ header {
   position: relative;
   left: -9px;
 }
-h1 {
+.hero-title {
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -221,7 +224,7 @@ h1 {
   align-items: center;
   position: relative;
   display: flex;
-  padding-right: 120px;
+  /* padding-right: 120px; */
 }
 .rotating-image {
   height: auto;
@@ -274,12 +277,11 @@ h1 {
   align-items: center;
   margin-bottom: 50px;
 }
-
 .slider-content {
   display: block;
   width: 280px;
 }
-h3 {
+.slider-title {
   font-size: 30px;
   font-weight: 400;
   line-height: 1;
@@ -304,7 +306,7 @@ h3 {
   cursor: pointer;
 }
 .slider-btn:hover,
-:focus {
+.slider-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   border: none;
@@ -312,22 +314,6 @@ h3 {
 .slider-btn:active {
   background-color: var(--primary-color);
 }
-.is-hidden {
-  display: none;
-}
-/* .solution {
-  width: 100%;
-  height: 100%;
-} */
-/* .solution-bg {
-  height: 900px;
-  width: auto;
-  background-image: url("../images/back-solutions.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
-} */
 /* partners */
 .partners {
   background-color: var(--primary-color);
@@ -379,7 +365,6 @@ h3 {
 }
 /* school */
 .school {
-  
   background-color: var(--section-bg);
 }
 .school-title {
@@ -472,14 +457,14 @@ h3 {
   color: var(--secondary-color);
 }
 /* franchise */
-.franchise {
+/* .franchise {
   width: 100%;
   height: 1080px;
-  background-image: url("../images/franchise-bg.jpg");
+  background-image: url("../images/franchise-bg_xl.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 .franchise-title {
   color: var(--secondary-color);
 }
@@ -498,16 +483,8 @@ h3 {
   background-color: var(--primary-color);
   border: none;
 }
-.franchise-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* events */
 
-.events-title {
-  margin-bottom: 140px;
-}
+/* events */
 .events-list {
   display: flex;
   gap: 40px;
@@ -516,7 +493,7 @@ h3 {
   display: block;
   width: 360px;
 }
-h5 {
+.events-text {
   height: 60px;
   margin-top: 30px;
   font-size: 20px;
@@ -555,25 +532,24 @@ h5 {
   line-height: 2;
 }
 .footer-nav-link:hover,
-:focus {
+.footer-nav-link:focus {
   color: var(--accent-color);
 }
 .contact-item {
   color: var(--secondary-color);
 }
-.footer-btn {
-  width: 260px;
+.footer-btn{
   height: 50px;
-  &:hover {
-    :focus {
-      background-color: var(--secondary-color);
-      color: var(--primary-color);
-    }
-  }
+}
+.footer-btn:hover,
+.footer-btn:focus{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .footer-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 130px;
 }
 .info-text {
@@ -584,16 +560,20 @@ h5 {
 }
 .footer-container {
   display: block;
-  margin-left: 400px;
+  width: 260px;
 }
 .footer-link {
   text-decoration: underline;
 }
 .footer-link:hover,
-:focus {
+.footer-link:focus {
   color: var(--secondary-color);
   cursor: pointer;
 }
+
+
+
+
 /* media */
 @media (min-width: 1440px) {
   .container {
@@ -617,7 +597,7 @@ h5 {
     background-size: cover;
     background-position: center;
   }
-  h1 {
+  .hero-title {
     font-size: 100px;
   }
   .reasons {
@@ -682,7 +662,6 @@ h5 {
     background-position: center;
     margin-top: 130px;
   }
-
   .solution-list {
     display: none;
   }
@@ -712,10 +691,10 @@ h5 {
   #solution-box-empty {
     display: none;
   }
-  .school{
+  .school {
     height: 1400px;
   }
-  .school-title{
+  .school-title {
     margin-bottom: 156px;
   }
   .education-item {
@@ -729,15 +708,32 @@ h5 {
   .location {
     height: 730px;
   }
-}
-@media (max-width: 1439px) {
-  .menu {
-    display: none;
+  .franchise {
+    width: 100%;
+    height: 1080px;
+    background-image: url("../images/franchise-bg_xl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  .btn-lang {
-    display: none;
+  .franchise-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .franchise-container {
+    width: 1080px;
+    margin-top: 200px; 
+  }
+  .events-title {
+    margin-bottom: 140px;
+  }
+  .footer-btn {
+    width: 260px;
   }
 }
+
+/* 960px - 1439px */
 @media (min-width: 960px) and (max-width: 1439px) {
   .container {
     padding: 140px 10px 130px 10px;
@@ -745,7 +741,7 @@ h5 {
   header {
     padding: 15px 20px 15px 10px;
   }
-  h1 {
+  .hero-title {
     font-size: 60px;
   }
   .hero {
@@ -838,7 +834,6 @@ h5 {
   .solution-item:not(:first-child) {
     margin-top: -10px;
   }
-
   .solution-title {
     margin-bottom: 20px;
     font-size: 24px;
@@ -859,10 +854,10 @@ h5 {
     align-items: center;
     gap: 20px;
   }
-  .school{
+  .school {
     height: 1280px;
   }
-  .school-title{
+  .school-title {
     margin-bottom: 96px;
   }
   .school-cards {
@@ -877,18 +872,37 @@ h5 {
     height: 240px;
     padding: 38px 30px 43px 30px;
   }
- 
   .location {
     height: 680px;
   }
-}
-@media (min-width: 640px) and (max-width: 1439px) {
-  .education-btn {
+  .franchise {
+    width: 100%;
+    height: 670px;
+    background-image: url("../images/franchise-bg_l.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .franchise-container {
+    width: 653px;
+  }
+  .events-title {
+    margin-bottom: 90px;
+  }
+  .footer-btn {
+    width: 300px;
+  }
+  .footer-container {
     width: 300px;
   }
 }
+
+/* 640px - 959px */
 @media (min-width: 640px) and (max-width: 959px) {
-  h1 {
+  .container{
+    padding: 140px 10px 150px 10px;
+  }
+  .hero-title {
     font-size: 36px;
   }
   .hero {
@@ -903,23 +917,34 @@ h5 {
   .solution-bg {
     margin-top: 84px;
   }
+  .franchise {
+    width: 100%;
+    height: 640px;
+    background-image: url("../images/franchise-bg_m.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .franchise-container {
+    width: 460px;
+  }
+  .franchise-btn{
+    margin-bottom: 40px;
+  }
   .location {
     height: 680px;
   }
-}
-@media (min-width: 480px) and (max-width: 1430px) {
-  .reasons-container-content {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 80px;
+  .events-title{
+    margin-bottom: 90px;
   }
-  .reasons-grid-container {
-    margin-top: 0;
+  .footer-btn {
+    width: 220px;
   }
 }
+
+/* 480px - 639px */
 @media (min-width: 480px) and (max-width: 639px) {
-  h1 {
+  .hero-title {
     font-size: 36px;
   }
   .hero {
@@ -931,33 +956,31 @@ h5 {
   .solution-bg {
     margin-top: 54px;
   }
-  .education-btn{
+  .education-btn {
     width: 459px;
   }
   .location {
     height: 710px;
   }
-}
-@media (min-width: 320px) and (max-width: 959px) {
-  .reasons-item-number {
-    font-size: 75px;
+  .franchise {
+    width: 100%;
+    height: 640px;
+    background-image: url("../images/franchise-bg_s.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  .reasons-content {
-    font-size: 24px;
+  .events-title {
+    margin-bottom: 64px;
   }
-}
-@media (min-width: 320px) and (max-width: 1439px) {
-  .reasons-item-content {
-    display: none;
-  }
-}
-@media (min-width: 320px) and (max-width: 639px) {
-  .reasons-grid-container {
-    margin-top: 70px;
+  .footer-btn {
+    width: 220px;
   }
 }
+
+/* 320px - 479px */
 @media (min-width: 320px) and (max-width: 479px) {
-  h1 {
+  .hero-title {
     font-size: 32px;
     color: var(--primary-color);
   }
@@ -973,10 +996,93 @@ h5 {
   .solution-bg {
     margin-top: 106px;
   }
-  .education-btn{
+  .education-btn {
     width: 300px;
   }
   .location {
     height: 980px;
+  }
+  .franchise {
+    width: 100%;
+    height: 640px;
+    background-image: url("../images/franchise-bg_xs.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .events-list {
+    gap: 53px;
+  }
+  .events-title {
+    margin-bottom: 104px;
+  }
+  .footer-btn {
+    width: 300px;
+  }
+}
+
+
+/* ----------------------------------------------- */
+/* extra media */
+@media (max-width: 1439px) {
+  .menu {
+    display: none;
+  }
+  .btn-lang {
+    display: none;
+  }
+}
+/* 640 + */
+@media (min-width: 640px) and (max-width: 1439px) {
+  .education-btn {
+    width: 300px;
+  }
+  .events-list {
+    display: flex;
+  }
+  .franchise-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+/* 480 + */
+@media (min-width: 480px) and (max-width: 1430px) {
+  .reasons-container-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 80px;
+  }
+  .reasons-grid-container {
+    margin-top: 0;
+  }
+  .events-list {
+    gap: 20px;
+  }
+}
+/* 320 +*/
+@media (min-width: 320px) and (max-width: 1439px) {
+  .reasons-item-content {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 959px) {
+  .reasons-item-number {
+    font-size: 75px;
+  }
+  .reasons-content {
+    font-size: 24px;
+  }
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .reasons-grid-container {
+    margin-top: 70px;
+  }
+  .education-list {
+    display: block;
+  }
+  .franchise-container {
+    display: none;
   }
 }

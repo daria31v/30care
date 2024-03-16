@@ -767,6 +767,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 115px 0;
   }
   .hero-title {
     font-size: 60px;
@@ -776,6 +777,14 @@ header {
   }
   .hero-link{
     top: 30%;
+  }
+  .reasons-title{
+    margin-bottom: 90px;
+  }
+  .reasons-container-content{
+    display:flex;
+    justify-content: center;
+    align-items: start;
   }
   .reasons-content {
     font-size: 26px;
@@ -827,7 +836,7 @@ header {
   }
   .slider-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .slider-content {
@@ -835,7 +844,7 @@ header {
     margin-top: 60px;
   }
   .slider-description {
-    margin: 0 100px 0 0;
+    width: 540px;
   }
   .solution-bg {
     margin-top: 84px;
@@ -903,6 +912,11 @@ header {
   .school-slogan{
     width: 700px;
   }
+  .education-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .education-list{
     gap: 20px;
   }
@@ -930,6 +944,9 @@ header {
   }
   .events-title {
     margin-bottom: 90px;
+  }
+  .events-item{
+    width: 300px;
   }
   .footer-btn {
     width: 300px;

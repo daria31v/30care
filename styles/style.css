@@ -379,7 +379,7 @@ h3 {
 }
 /* school */
 .school {
-  height: ;
+  
   background-color: var(--section-bg);
 }
 .school-title {
@@ -479,7 +479,6 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 180px;
 }
 .franchise-title {
   color: var(--secondary-color);
@@ -503,13 +502,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 210px;
 }
 /* events */
-.events {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
+
 .events-title {
   margin-bottom: 140px;
 }
@@ -536,8 +531,6 @@ h5 {
 }
 /* footer */
 .footer {
-  padding-top: 180px;
-  padding-bottom: 180px;
   background-color: var(--primary-color);
 }
 .footer-nav {
@@ -603,9 +596,8 @@ h5 {
 }
 /* media */
 @media (min-width: 1440px) {
-  
   .container {
-    padding: 180px 220px 0 220px;
+    padding: 180px 220px 130px 220px;
   }
   header {
     padding: 20px 50px;
@@ -690,7 +682,7 @@ h5 {
     background-position: center;
     margin-top: 130px;
   }
- 
+
   .solution-list {
     display: none;
   }
@@ -720,14 +712,23 @@ h5 {
   #solution-box-empty {
     display: none;
   }
+  .school{
+    height: 1400px;
+  }
+  .school-title{
+    margin-bottom: 156px;
+  }
   .education-item {
     width: 360px;
     height: 240px;
     padding: 38px 40px 43px 40px;
-}
-.location{
-  height: 730px;
-}
+  }
+  .education-btn {
+    width: 360px;
+  }
+  .location {
+    height: 730px;
+  }
 }
 @media (max-width: 1439px) {
   .menu {
@@ -736,11 +737,10 @@ h5 {
   .btn-lang {
     display: none;
   }
-  
 }
 @media (min-width: 960px) and (max-width: 1439px) {
   .container {
-    padding: 180px 10px 130px 10px;
+    padding: 140px 10px 130px 10px;
   }
   header {
     padding: 15px 20px 15px 10px;
@@ -820,7 +820,7 @@ h5 {
   .solution-box-m {
     display: none;
   }
-  #solution-box-empty{
+  #solution-box-empty {
     background-color: transparent;
   }
   .solution-list {
@@ -834,7 +834,6 @@ h5 {
     background-color: var(--section-bg);
     padding: 74px 40px;
     border: none;
-  
   }
   .solution-item:not(:first-child) {
     margin-top: -10px;
@@ -849,10 +848,10 @@ h5 {
   .solution-text {
     font-family: var(--font-accent);
   }
-  .partners-container{
+  .partners-container {
     display: block;
   }
-  .partners-group-btn{
+  .partners-group-btn {
     padding-top: 0;
     margin-top: 105px;
     display: flex;
@@ -860,10 +859,16 @@ h5 {
     align-items: center;
     gap: 20px;
   }
-  .school-cards{
+  .school{
+    height: 1280px;
+  }
+  .school-title{
+    margin-bottom: 96px;
+  }
+  .school-cards {
     gap: 20px;
   }
-  .school-description{
+  .school-description {
     margin-top: 27px;
     margin-bottom: 62px;
   }
@@ -871,10 +876,16 @@ h5 {
     width: 300px;
     height: 240px;
     padding: 38px 30px 43px 30px;
+  }
+ 
+  .location {
+    height: 680px;
+  }
 }
-.location{
-  height: 680px;
-}
+@media (min-width: 640px) and (max-width: 1439px) {
+  .education-btn {
+    width: 300px;
+  }
 }
 @media (min-width: 640px) and (max-width: 959px) {
   h1 {
@@ -892,7 +903,7 @@ h5 {
   .solution-bg {
     margin-top: 84px;
   }
-  .location{
+  .location {
     height: 680px;
   }
 }
@@ -920,7 +931,10 @@ h5 {
   .solution-bg {
     margin-top: 54px;
   }
-  .location{
+  .education-btn{
+    width: 459px;
+  }
+  .location {
     height: 710px;
   }
 }
@@ -959,7 +973,10 @@ h5 {
   .solution-bg {
     margin-top: 106px;
   }
-  .location{
+  .education-btn{
+    width: 300px;
+  }
+  .location {
     height: 980px;
   }
 }

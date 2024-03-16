@@ -908,8 +908,14 @@ header {
   .school-cards {
     gap: 20px;
   }
-  .school-card{
-    height: 100%;
+  .school-circle{
+    margin-bottom: 20px;
+    position: relative;
+  }
+ .school-circle-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
   }
   .school-description {
     margin-top: 27px;

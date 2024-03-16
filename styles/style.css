@@ -227,8 +227,7 @@ header {
 .rotating-image {
   height: auto;
   position: absolute;
-  animation: rotateAnimation 31s linear infinite reverse; /* Время, тип анимации и бесконечность с обратным вращением */
-  top: 50px;
+  animation: rotateAnimation 31s linear infinite reverse;
 }
 @keyframes rotateAnimation {
   to {
@@ -607,6 +606,14 @@ header {
   .hero-title {
     font-size: 100px;
   }
+  .hero-content{
+    position: relative;
+  }
+  .circle-hero{
+    position: absolute;
+    top: 720px;
+    right: 50px;
+  }
   .reasons {
     margin-bottom: 50px;
     display: flex;
@@ -717,6 +724,14 @@ header {
     justify-content: end;
     align-items: center;
   }
+  .school-circle{
+    position: relative;
+  }
+ .school-circle-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+  }
   .partners-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 350px);
@@ -779,6 +794,14 @@ header {
   }
   .hero-title {
     font-size: 60px;
+  }
+  .hero-content{
+    position: relative;
+  }
+  .circle-hero{
+    position: absolute;
+    top: 500px;
+    right: 50px;
   }
   #link{
     margin-right: 30px;
@@ -909,7 +932,6 @@ header {
     gap: 20px;
   }
   .school-circle{
-    margin-bottom: 20px;
     position: relative;
   }
  .school-circle-text{
@@ -992,6 +1014,16 @@ header {
     background-size: cover;
     background-position: center;
     padding: 83px 0 97px 0;
+  }
+  .hero-content{
+    position: relative;
+  }
+  .circle-hero{
+    position: absolute;
+    top: 360px;
+    right: 50px;
+    width: 150px;
+    height: 150px;
   }
   #link {
     margin-right: 10px;
@@ -1218,10 +1250,21 @@ header {
     font-size: 36px;
   }
   .hero {
+    height: 360px;
     background-image: url("/images/hero-1x_s.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .hero-content{
+    position: relative;
+  }
+  .circle-hero{
+    position: absolute;
+    top: 360px;
+    right: 20px;
+    width: 140px;
+    height: 140px;
   }
   .solution-bg {
     margin-top: 54px;
@@ -1255,10 +1298,27 @@ header {
     color: var(--primary-color);
   }
   .hero {
+    height: 220px;
     background-image: url("/images/hero-1x_xs.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .hero-title{
+    display: none;
+  }
+  .hero-title-small{
+    display: block;
+  }
+  .hero-content{
+    position: relative;
+  }
+  .circle-hero{
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    width: 140px;
+    height: 140px;
   }
   .reasons-grid-container {
     margin-top: 68px;
@@ -1322,6 +1382,11 @@ header {
   }
   .events-list {
     gap: 20px;
+  }
+}
+@media (min-width: 480px) {
+  .small-title{
+    display:none;
   }
 }
 /* 320 +*/

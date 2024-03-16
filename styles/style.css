@@ -30,6 +30,7 @@ input::placeholder {
   font-family: var(--font-accent);
   font-weight: 300;
 }
+
 input:placeholder-shown::placeholder {
   background-color: transparent;
   font-size: 20px;
@@ -100,11 +101,11 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  &:hover,
-  :focus,
-  :active {
-    background-color: var(--primary-color);
-  }
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--primary-color);
 }
 
 .burger-menu {
@@ -659,6 +660,12 @@ header {
     background-size: 100%;
     margin-right: 140px;
   }
+  .solution-container{
+    padding: 140px 220px 0 220px;
+  }
+  .solution{
+    margin-bottom: 130px;
+  }
   .solution-bg {
     height: 900px;
     width: auto;
@@ -666,8 +673,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 130px;
+  
   }
+  
   .solution-list {
     display: none;
   }
@@ -846,8 +854,11 @@ header {
   .slider-description {
     width: 540px;
   }
-  .solution-bg {
-    margin-top: 84px;
+  .solution-container{
+    padding: 140px 10px 0 10px;
+  }
+  .solution{
+    margin-bottom: 84px;
   }
   .solution-box-m {
     display: none;
@@ -861,7 +872,7 @@ header {
     grid-row-gap: 0;
   }
   .solution-item {
-    width: auto;
+    width: 320px;
     height: 470px;
     background-color: var(--section-bg);
     padding: 74px 40px;
@@ -982,7 +993,9 @@ header {
   .reasons-grid-container {
     margin-top: 80px;
   }
-  .reasons-item {
+  .element-one,
+  .element-two {
+    padding-bottom: 30px;
     border-bottom: 1px solid var(--pop-up-color);
   }
   .element-two,
@@ -1032,17 +1045,22 @@ header {
   .slider-btn {
     width: 300px;
   }
+  .solution-container{
+    padding: 90px 10px 0 10px;
+  }
+  .solution{
+    margin-bottom: 84px;
+  }
   .solution-bg {
     background-image: none;
   }
   .solution-list {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 320px);
     grid-row-gap: 0;
-    margin-top: 84px;
   }
   .solution-item {
-    width: 100%;
     background-color: var(--section-bg);
     padding: 74px 40px;
   }
@@ -1056,6 +1074,7 @@ header {
     display: block;
   }
   .partners-title{
+    margin-top: 50px;
     margin-bottom: 70px;
   }
   .partners-grid-container {
@@ -1075,6 +1094,9 @@ header {
     display: grid;
     justify-content: end;
     align-items: center;
+  }
+  .school{
+    height: 1630px;
   }
   .school-title{
     margin-top: 60px;
@@ -1096,10 +1118,14 @@ header {
     width: 200px;
     height: 100%;
   }
-  school-circle-text{
+  .school-circle{
+    margin-bottom: 20px;
+    position: relative;
+  }
+ .school-circle-text{
     position: absolute;
-    top: -150px;
-    right: -120px;
+    top: 60%;
+    left: 50%;
   }
   .school-description{
     display: flex;

@@ -2,7 +2,7 @@ const dialog = document.getElementById("myDialog");
 const backdrop = document.getElementById("backdrop");
 const closeButton = document.getElementById("closeDialog");
 const openButtons = document.querySelectorAll(".openDialog");
-console.log(backdrop);
+
 
 openButtons.forEach((button) => {
   button.addEventListener("click", () => {

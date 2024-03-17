@@ -399,12 +399,11 @@ header {
 }
 .school-card {
   width: 260px;
-  height: 400px;
+  height: 100%;
   padding: 10px 10px 30px 10px;
   background-color: var(--secondary-color);
   border-radius: 5px;
 }
-
 .school-img {
   width: 240px;
   height: 360px;
@@ -415,7 +414,6 @@ header {
   margin-bottom: 23px;
   font-family: var(--font-accent);
 }
-
 .school-details {
   display: grid;
 }
@@ -1144,7 +1142,15 @@ header {
     font-size: 95px;
   }
   .slider-product {
+    position: relative;
     display: block;
+  }
+  .slider-circle {
+    position: absolute;
+    top: -70px;
+    right: 50px;
+    width: 150px;
+    height: 150px;
   }
   .slider-bg {
     width: 640px;
@@ -1255,8 +1261,10 @@ header {
   }
   .school-circle-text {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 280px;
+    left: 140px;
+    width: 150px;
+    height: 150px;
   }
   .school-description {
     display: flex;
@@ -1273,6 +1281,22 @@ header {
   .school-box-slogan {
     margin-top: 36px;
     width: 620px;
+  }
+  .education{
+    margin-bottom: 96px;
+  }
+  .education-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .education-circle {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    width: 150px;
+    height: 150px;
   }
   .education-list {
     gap: 20px;

@@ -458,7 +458,8 @@ header {
   width: 360px;
   height: 160px;
 }
-.location-text {
+.location-text,
+.location-title {
   color: var(--secondary-color);
 }
 /* franchise */
@@ -718,8 +719,10 @@ header {
     position: absolute;
     top: -100px;
     right: 390px;
+    z-index: 10;
   }
   .slider-bg {
+    position: relative;
     width: 960px;
     height: 600px;
     background-image: url("../images/slider-bg_xl.jpg");
@@ -814,15 +817,17 @@ header {
     width: 360px;
   }
   .education-content {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
   }
+  .education-list {
+    position: relative;
+  }
   .education-circle {
     position: absolute;
     top: -100px;
-    right: 145px;
+    right: -100px;
   }
   .location {
     height: 730px;
@@ -1035,7 +1040,7 @@ header {
   .school-slogan {
     width: 700px;
   }
-  .education{
+  .education {
     margin-bottom: 96px;
   }
   .education-content {
@@ -1049,7 +1054,7 @@ header {
     top: -100px;
     right: 200px;
   }
-  .education-list{
+  .education-list {
     gap: 20px;
   }
   .education-item {
@@ -1137,9 +1142,13 @@ header {
   }
   .reasons-content p {
     width: 300px;
+    padding: 10px;
   }
   .reasons-item-number {
     font-size: 95px;
+  }
+  .reasons-item-text {
+    font-size: 26px;
   }
   .slider-product {
     position: relative;
@@ -1282,7 +1291,7 @@ header {
     margin-top: 36px;
     width: 620px;
   }
-  .education{
+  .education {
     margin-bottom: 96px;
   }
   .education-content {
@@ -1294,7 +1303,7 @@ header {
   .education-circle {
     position: absolute;
     top: -80px;
-    right: -60px;
+    right: 5px;
     width: 150px;
     height: 150px;
   }
@@ -1363,6 +1372,10 @@ header {
 
 /* 480px - 639px */
 @media (min-width: 480px) and (max-width: 639px) {
+  .container {
+    padding: 130px 10px 0 10px;
+  }
+
   .hero-title {
     font-size: 36px;
   }
@@ -1372,6 +1385,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+  .main {
+    padding: 90px 0;
+  }
+  #link {
+    margin-right: 10px;
+  }
+  .hero-link {
+    top: 80px;
   }
   .hero-content {
     position: relative;
@@ -1383,14 +1405,244 @@ header {
     width: 140px;
     height: 140px;
   }
+  .reasons-container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    margin-top: 80px;
+  }
+  .reason {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .reasons-content p {
+    width: 220px;
+  }
+  .reasons-grid-container {
+    display: block;
+    margin-top: 0;
+    width: 220px;
+  }
+  .reasons-item-number {
+    font-size: 75px;
+    line-height: 0.66;
+    margin-bottom: 30px;
+  }
+  .reasons-item-text {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .element-one,
+  .element-two {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--pop-up-color);
+  }
+  .element-two,
+  .element-three {
+    margin-top: 50px;
+  }
+  .slider {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .slider-product {
+    position: relative;
+    display: block;
+  }
+  .slider-circle {
+    position: absolute;
+    top: -70px;
+    right: 30px;
+    width: 150px;
+    height: 150px;
+  }
+  .slider-bg {
+    width: 100%;
+    height: 480px;
+    background-image: url("../images/slider-bg_s.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slider-content-box {
+    padding: 0 10px 0 10px;
+  }
+  .slider-container {
+    display: block;
+  }
+  .slider-content {
+    width: auto;
+    margin-top: 60px;
+  }
+  .slider-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .slider-description {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .slider-group-btn {
+    display: grid;
+    justify-content: end;
+  }
+  .slider-btn {
+    width: 300px;
+  }
+
+  .solution-container {
+    padding: 90px 10px 0 10px;
+  }
+  .solution {
+    margin-bottom: 84px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
   .solution-bg {
+    background-image: none;
     margin-top: 54px;
+  }
+  .solution-list {
+    width: 480px;
+    display: block;
+  }
+  .solution-item {
+    background-color: var(--section-bg);
+    padding: 70px 60px;
+    height: 400px;
+  }
+  .solution-item {
+    margin-top: -10px;
+  }
+  .solution-box-s {
+    display: none;
+  }
+  #solution-box-empty,
+  #solution-box-empty-m {
+    display: none;
+  }
+  .solution-title {
+    margin-bottom: 50px;
+  }
+  .partners {
+    height: 1340px;
+  }
+  .partners-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  .partners-container {
+    display: block;
+  }
+  .partners-title {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .partners-item-box-one,
+  .partners-item-box-two {
+    width: 300px;
+  }
+  .partners-item-box-two {
+    margin-left: 150px;
+  }
+  .partners-grid-container {
+    display: block;
+  }
+  .partners-text {
+    font-family: var(--font-accent);
+    font-weight: 500;
+  }
+  .partners-group-btn {
+    padding-top: 0;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .school-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  .school-content {
+    display: block;
+  }
+  .school-circle {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .school-circle-text {
+    position: absolute;
+    top: -90px;
+    left: 110px;
+  }
+  .school-card {
+    width: 220px;
+  }
+  .school-cards {
+    gap: 10px;
+    justify-content: center;
+  }
+  .school-details {
+    display: block;
+  }
+  .school-description p {
+    width: 460px;
+  }
+  .school-box-slogan {
+    padding: 57px 0 49px 0;
+  }
+  .education {
+    margin-bottom: 96px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  .education-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .education-circle {
+    position: absolute;
+    top: -80px;
+    right: 5px;
+    width: 150px;
+    height: 150px;
+  }
+  .education-list {
+    display: grid;
+    gap: 20px;
+  }
+  .education-item {
+    padding: 38px 40px 43px 40px;
+  }
+  .education-content {
+    display: block;
+  }
+  .education-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 50px;
   }
   .education-btn {
     width: 459px;
   }
   .location {
     height: 710px;
+  }
+  .location-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
   }
   .franchise {
     width: 100%;
@@ -1400,12 +1652,69 @@ header {
     background-size: cover;
     background-position: center;
   }
+  .franchise-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+    margin-top: 10px;
+  }
+  .franchise-text {
+    margin: 44px 0;
+  }
   .events-title {
     margin-bottom: 64px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  .events-list {
+    display: block;
+    margin-bottom: 150px;
+  }
+  .events-item {
+    display: flex;
+    gap: 20px;
+    width: 480px;
+    height: 100%;
+  }
+  .events-item:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+  .events-item:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+  .events-item img {
+    width: 220px;
+  }
+  .events-item-box {
+    display: block;
+  }
+  .events-text {
+    margin-top: 0;
+  }
+  .footer-content {
+    display: block;
+  }
+  .footer-nav {
+    gap: 60px;
+  }
+  .footer-btn-box {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    margin-top: 60px;
   }
   .footer-btn {
     width: 220px;
   }
+  .footer-info {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .footer-container li {
+    width: 220px;
+  }
+  /* berger-menu */
 }
 
 /* 320px - 479px */
@@ -1524,25 +1833,30 @@ header {
   }
 }
 @media (min-width: 320px) and (max-width: 959px) {
-  .reasons-item-number {
-    font-size: 75px;
-  }
-  .reasons-content {
-    font-size: 24px;
+  #myDialog {
+    width: 300px;
+    height: 312px;
+    padding: 52px 40px 40px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    z-index: 100;
   }
 }
 @media (min-width: 320px) and (max-width: 639px) {
-  .reasons-grid-container {
-    margin-top: 70px;
+  header {
+    padding: 15px 20px 15px 10px;
   }
-  .education-list {
-    display: block;
+  .header-btn {
+    display: none;
   }
   .franchise-container {
     display: none;
   }
   .burger-overlay {
     width: 220px;
+    top: 0;
+    right: 88px;
   }
   .burger-btn {
     width: 180px;

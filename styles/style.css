@@ -1752,6 +1752,84 @@ header {
   .slider-btn {
     width: 300px;
   }
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    display: none;
+    position: relative;
+    display: flex;
+  }
+  .slide img {
+    max-width: 100%;
+    position: absolute;
+  }
+ 
+  #product-1 {
+    width: 90px;
+    top: 150px;
+    right: 140px;
+  }
+  #product-2 {
+    width: 90px;
+    top: 330px;
+    right: 30px;
+  }
+  #product-3 {
+    width: 170px;
+    top: 150px;
+    right: 100px;
+  }
+  #product-4 {
+    width: 110px;
+    top: 330px;
+    right: 20px;
+  }
+  #product-5 {
+    width: 95px;
+    top: 140px;
+    right: 120px;
+  }
+  #product-6 {
+    width: 110px;
+    top: 340px;
+    right: 20px;
+  }
+  #product-7 {
+    width: 100px;
+    top: 150px;
+    right: 100px;
+  }
+  #product-8 {
+    width: 110px;
+    top: 380px;
+    right: 20px;
+  }
+  .description{
+    margin-top: 100px;
+  }
+  .dots {
+    text-align: center;
+    padding: 30px 20px;
+    position: absolute;
+    top: 480px;
+    right: 130px;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: var(--primary-color);
+  }
+
 
   .solution-container {
     padding: 90px 10px 0 10px;
@@ -2114,6 +2192,84 @@ header {
   .slider-btn {
     width: 300px;
   }
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    display: none;
+    position: relative;
+    display: flex;
+  }
+  .slide img {
+    max-width: 100%;
+    position: absolute;
+  }
+ 
+  #product-1 {
+    width: 70px;
+    top: 140px;
+    right: 100px;
+  }
+  #product-2 {
+    width: 80px;
+    top: 260px;
+    right: 30px;
+  }
+  #product-3 {
+    width: 120px;
+    top: 140px;
+    right: 80px;
+  }
+  #product-4 {
+    width: 90px;
+    top: 280px;
+    right: 20px;
+  }
+  #product-5 {
+    width: 75px;
+    top: 120px;
+    right: 90px;
+  }
+  #product-6 {
+    width: 90px;
+    top: 280px;
+    right: 20px;
+  }
+  #product-7 {
+    width: 80px;
+    top: 140px;
+    right: 80px;
+  }
+  #product-8 {
+    width: 90px;
+    top: 320px;
+    right: 20px;
+  }
+  .description{
+    margin-top: 100px;
+  }
+  .dots {
+    text-align: center;
+    padding: 30px 20px;
+    position: absolute;
+    top: 400px;
+    right: 40px;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: var(--primary-color);
+  }
+
   .solution-container {
     padding: 90px 10px 0 10px;
   }

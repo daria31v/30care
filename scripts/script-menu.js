@@ -1,5 +1,5 @@
-const burgerIcon = document.getElementById("burger-menu-icon");
-const mobileMenu = document.querySelector(".burger-overlay");
+const burgerIcon = document.getElementById('burger-menu-icon');
+const mobileMenu = document.querySelector('.burger-overlay');
 
 burgerIcon.addEventListener('click', () => {
   mobileMenu.classList.toggle('is-hidden');

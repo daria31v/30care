@@ -24,6 +24,9 @@
   text-decoration: none;
   color: var(--primary-color);
 }
+label {
+  font-size: 20px;
+}
 input::placeholder {
   background-color: transparent;
   font-size: 20px;
@@ -129,26 +132,14 @@ header {
 #backdrop {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 99;
 }
-#myDialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 560px;
-  height: 280px;
-  padding: 52px 40px 40px 40px;
-  border-radius: 5px;
-  border: none;
-  background-color: #fff;
-  z-index: 100;
-}
+
 #closeDialog {
   width: 120px;
   height: 50px;
@@ -344,7 +335,7 @@ header {
 }
 .partners-title {
   color: var(--secondary-color);
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 .partners-container {
   display: flex;
@@ -455,12 +446,16 @@ header {
   margin-top: 80px;
 }
 .location-item {
-  width: 360px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
 }
 .location-text,
-.location-title {
+.location-title,
+.location-link {
   color: var(--secondary-color);
+}
+.location-link {
+  text-decoration: underline;
 }
 /* franchise */
 .franchise-title {
@@ -856,7 +851,23 @@ header {
     width: 260px;
   }
 }
-
+@media (min-width: 960px) {
+  /* dialog */
+  #myDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 280px;
+    padding: 52px 40px 40px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    z-index: 100;
+  }
+}
 /* 960px - 1439px */
 @media (min-width: 960px) and (max-width: 1439px) {
   .container {
@@ -1405,6 +1416,12 @@ header {
     width: 140px;
     height: 140px;
   }
+  .burger-menu{
+    margin: 0;
+  }
+  .logo{
+    margin: 0;
+  }
   .reasons-container-content {
     display: flex;
     justify-content: space-between;
@@ -1422,7 +1439,7 @@ header {
   .reasons-grid-container {
     display: block;
     margin-top: 0;
-    width: 220px;
+    width: auro;
   }
   .reasons-item-number {
     font-size: 75px;
@@ -1591,8 +1608,11 @@ header {
   .school-details {
     display: block;
   }
-  .school-description p {
+  .school-description {
     width: 460px;
+  }
+  .text{
+    margin: 0;
   }
   .school-box-slogan {
     padding: 57px 0 49px 0;
@@ -1674,7 +1694,7 @@ header {
   .events-item {
     display: flex;
     gap: 20px;
-    width: 480px;
+    width: 100%;
     height: 100%;
   }
   .events-item:nth-of-type(1) {
@@ -1691,6 +1711,9 @@ header {
   }
   .events-text {
     margin-top: 0;
+  }
+  .footer{
+    height: 750px;
   }
   .footer-content {
     display: block;
@@ -1715,10 +1738,27 @@ header {
     width: 220px;
   }
   /* berger-menu */
+  .burger-overlay {
+    width: 220px;
+    top: 0;
+    right: 88px;
+    border: 1px solid black;
+  }
+  .burger-btn {
+    width: 180px;
+  }
 }
 
 /* 320px - 479px */
 @media (min-width: 320px) and (max-width: 479px) {
+  .container {
+    padding: 90px 10px 0 10px;
+  }
+  .title-second {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
   .hero-title {
     font-size: 32px;
     color: var(--primary-color);
@@ -1733,8 +1773,19 @@ header {
   .hero-title {
     display: none;
   }
+  .hero-link {
+    left: -115px;
+  }
+  .small-title {
+    margin-top: 100px;
+    padding: 0 10px;
+  }
   .hero-title-small {
     display: block;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
   }
   .hero-content {
     position: relative;
@@ -1746,17 +1797,224 @@ header {
     width: 140px;
     height: 140px;
   }
+  .reason {
+    margin: 35px 0 68px 0;
+  }
+  .reasons-container-content {
+    display: block;
+    text-align: center;
+  }
   .reasons-grid-container {
     margin-top: 68px;
   }
+  
+  .reasons-item-number {
+    font-size: 75px;
+    line-height: 0.66;
+    margin-bottom: 30px;
+  }
+  .reasons-item-text {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .element-one,
+  .element-two {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--pop-up-color);
+  }
+  .element-two,
+  .element-three {
+    margin-top: 50px;
+  }
+
+  .slider {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+  .slider-product {
+    position: relative;
+    display: block;
+  }
+  .slider-circle {
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  .slider-bg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/slider-bg_xs.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .slider-content-box {
+    padding: 0 10px 0 10px;
+  }
+  .slider-container {
+    display: block;
+  }
+  .slider-content {
+    width: auto;
+    margin-top: 60px;
+  }
+  .slider-description {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .slider-group-btn {
+    display: grid;
+    justify-content: end;
+  }
+  .slider-btn {
+    width: 300px;
+  }
+  .solution-container {
+    padding: 90px 10px 0 10px;
+  }
+  .solution {
+    margin-bottom: 84px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
   .solution-bg {
-    margin-top: 106px;
+    background-image: none;
+    margin-top: 54px;
+  }
+  .solution-list {
+    display: block;
+  }
+  .solution-item {
+    background-color: var(--section-bg);
+    padding: 74px 40px;
+    height: 470px;
+  }
+  .solution-item {
+    margin-top: -10px;
+  }
+  .solution-box-m {
+    display: none;
+  }
+  #solution-box-empty,
+  #solution-box-empty-m {
+    display: none;
+  }
+  .solution-title {
+    margin-bottom: 50px;
+  }
+  .partners {
+    height: 1430px;
+  }
+  .partners-title {
+    margin-top: 50px;
+  }
+  .partners-container {
+    display: block;
+  }
+  .partners-item {
+    width: 100%;
+    height: auto;
+  }
+  .partners-group-btn {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .school-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.18;
+    margin-top: 50px;
+  }
+  .school-content {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+  .school-circle {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .school-circle-text {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    width: 140px;
+    height: 140px;
+  }
+  .school-card {
+    width: 298px;
+  }
+  .school-card img {
+    width: 298px;
+  }
+  .school-cards {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+  .school-details {
+    display: block;
+  }
+  .school-description {
+    width: 100%;
+  }
+  .school-box-slogan {
+    padding: 57px 0 49px 0;
+  }
+  .education {
+    margin: 50px 0 150px 0;
+    height: 100%;
+  }
+  .education-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .education-circle {
+    position: absolute;
+    top: -80px;
+    right: 5px;
+    width: 150px;
+    height: 150px;
+  }
+  .education-list {
+    display: grid;
+    gap: 20px;
+  }
+  .education-item {
+    padding: 38px 40px 43px 40px;
+  }
+  .education-content {
+    display: block;
+  }
+  .education-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 50px;
   }
   .education-btn {
     width: 300px;
   }
   .location {
-    height: 980px;
+    height: 710px;
+  }
+  .location-title {
+    margin-top: 50px;
+  }
+  .location-list {
+    display: grid;
+    gap: 60px;
+  }
+  .location-item {
+    width: auto;
+    height: auto;
   }
   .franchise {
     width: 100%;
@@ -1766,18 +2024,84 @@ header {
     background-size: cover;
     background-position: center;
   }
-  .events-list {
-    gap: 53px;
+  .franchise-title {
+    margin-top: 50px;
+  }
+  .franchise-text {
+    margin: 50px 0;
   }
   .events-title {
-    margin-bottom: 104px;
+    margin-bottom: 64px;
+    margin-top: 50px;
+  }
+  .events-list {
+    display: block;
+    margin-bottom: 150px;
+  }
+  .events-item {
+    display: block;
+    width: 100%;
+  }
+  .events-item:nth-of-type(1) {
+    margin-bottom: 53px;
+  }
+  .events-item:nth-of-type(2) {
+    margin-bottom: 53px;
+  }
+  .events-item img {
+    width: 300px;
+  }
+  .events-item-box {
+    display: block;
+    margin-top: 30px;
+  }
+  .events-text {
+    margin-top: 0;
+  }
+  .footer {
+    height: 1040px;
+  }
+  .footer-content {
+    display: block;
+    margin-top: 50px;
+  }
+  .footer-nav {
+    display: block;
+  }
+  .footer-btn-box {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    margin-top: 60px;
   }
   .footer-btn {
     width: 300px;
   }
+  .footer-info {
+    margin-top: 50px;
+    display: block;
+  }
+  .footer-container li {
+    width: 220px;
+  }
+  .footer-contact {
+    margin-left: 0;
+  }
+  .info-text {
+    margin-bottom: 20px;
+  }
+
+  /* burger-menu */
+  .burger-overlay {
+    width: 220px;
+    top: 0;
+    right: 40px;
+  }
+  .burger-btn {
+    width: 180px;
+  }
 }
 
-/* ----------------------------------------------- */
 /* extra media */
 @media (min-width: 1440px) {
   .burger-overlay {
@@ -1834,6 +2158,9 @@ header {
 }
 @media (min-width: 320px) and (max-width: 959px) {
   #myDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     width: 300px;
     height: 312px;
     padding: 52px 40px 40px 40px;
@@ -1841,6 +2168,7 @@ header {
     border: none;
     background-color: #fff;
     z-index: 100;
+    transform: translate(-50%, -50%);
   }
 }
 @media (min-width: 320px) and (max-width: 639px) {
@@ -1852,13 +2180,5 @@ header {
   }
   .franchise-container {
     display: none;
-  }
-  .burger-overlay {
-    width: 220px;
-    top: 0;
-    right: 88px;
-  }
-  .burger-btn {
-    width: 180px;
   }
 }

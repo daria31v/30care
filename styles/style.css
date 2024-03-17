@@ -161,7 +161,7 @@ header {
   border: none;
   border-bottom: 1px solid var(--pop-up-color);
 }
-.tohle-lang{
+.tohle-lang {
   display: flex;
   gap: 10px;
 }
@@ -589,21 +589,21 @@ header {
 .burger-container {
   background-color: var(--secondary-color);
 }
-.burger-nav{
+.burger-nav {
   margin-bottom: 28px;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 .burger-list {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.burger-item{
+.burger-item {
   font-family: var(--font-accent);
   font-size: 20px;
   line-height: 3;
 }
-.burger-tohle{
+.burger-tohle {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -713,12 +713,12 @@ header {
   .element-for {
     display: none;
   }
-  .slider-product{
+  .slider-product {
     position: relative;
   }
-  .slider-circle{
+  .slider-circle {
     position: absolute;
-    top:-100px;
+    top: -100px;
     right: 390px;
   }
   .slider-bg {
@@ -801,7 +801,7 @@ header {
     justify-content: start;
     align-items: center;
   }
-  .partners-group-btn{
+  .partners-group-btn {
     padding-top: 330px;
   }
   .education-item {
@@ -809,19 +809,19 @@ header {
     height: 240px;
     padding: 38px 40px 43px 40px;
   }
-  .education{
+  .education {
     margin-bottom: 96px;
   }
   .education-btn {
     width: 360px;
   }
-  .education-content{
+  .education-content {
     position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
   }
-  .education-circle{
+  .education-circle {
     position: absolute;
     top: -100px;
     right: 145px;
@@ -931,7 +931,13 @@ header {
     border-right: 1px solid var(--accent-color);
   }
   .slider-product {
+    position: relative;
     display: block;
+  }
+  .slider-circle {
+    position: absolute;
+    top: -100px;
+    right: 50px;
   }
   .slider-bg {
     width: 960px;
@@ -1016,8 +1022,8 @@ header {
   }
   .school-circle-text {
     position: absolute;
-    top: 60%;
-    left: 60%;
+    top: 300px;
+    left: 150px;
   }
   .school-description {
     margin-top: 27px;
@@ -1031,21 +1037,27 @@ header {
   .school-slogan {
     width: 700px;
   }
+  .education{
+    margin-bottom: 96px;
+  }
   .education-content {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
   }
-  .education-list {
+  .education-circle {
+    position: absolute;
+    top: -100px;
+    right: 200px;
+  }
+  .education-list{
     gap: 20px;
   }
   .education-item {
     width: 300px;
     height: 240px;
     padding: 38px 30px 43px 30px;
-  }
-  .education-btn {
-    width: 300px;
   }
   .location {
     height: 680px;
@@ -1460,10 +1472,10 @@ header {
     align-items: center;
     justify-content: end;
   }
-  .burger-overlay{
+  .burger-overlay {
     width: 300px;
   }
-  .burger-btn{
+  .burger-btn {
     width: 200px;
   }
 }
@@ -1505,10 +1517,10 @@ header {
   .franchise-container {
     display: none;
   }
-  .burger-overlay{
+  .burger-overlay {
     width: 220px;
   }
-  .burger-btn{
+  .burger-btn {
     width: 180px;
   }
 }
